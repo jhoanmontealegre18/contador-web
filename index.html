@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Likes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="tarjeta">
+    <h1>Interactividad con el DOM</h1>
+    <p class="subtitulo">
+      Haz clic en el botón para incrementar el contador y registrar la hora exacta del evento en la tabla.
+    </p>
+
+    <!-- Número del contador -->
+    <div id="contador" class="contador">0</div>
+
+    <!-- Botones -->
+    <div class="botones">
+      <button id="btn-like" class="btn-like">¡Haz Clic Aquí!</button>
+      <button id="btn-reiniciar" class="btn-reiniciar">Reiniciar a cero</button>
+    </div>
+
+    <!-- Tabla de registros -->
+    <table>
+      <thead>
+        <tr>
+          <th>Nº Clic</th>
+          <th>Hora</th>
+        </tr>
+      </thead>
+      <tbody id="cuerpo-tabla"></tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
