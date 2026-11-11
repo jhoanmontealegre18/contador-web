@@ -50,3 +50,8 @@ botonReiniciar.addEventListener("click", () => {
 function actualizarColor() {
   document.body.classList.toggle("superado", likes > 10);
 }
+
+ // Mantener solo los últimos 20 registros
+  while (cuerpoTabla.rows.length > 20) {
+    cuerpoTabla.deleteRow(-1);
+  }
