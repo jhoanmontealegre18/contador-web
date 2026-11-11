@@ -31,6 +31,8 @@ boton.addEventListener("click", () => {
   fila.appendChild(celdaHora);
 
   cuerpoTabla.prepend(fila);
+
+  actualizarColor();
 });
 
 // 5. Reto 1: botón reiniciar
@@ -40,4 +42,11 @@ botonReiniciar.addEventListener("click", () => {
   likes = 0;
   textoContador.textContent = likes;
   cuerpoTabla.innerHTML = "";
+
+  actualizarColor();
 });
+
+// 6. Reto 2: cambiar color al superar 10 likes
+function actualizarColor() {
+  document.body.classList.toggle("superado", likes > 10);
+}
