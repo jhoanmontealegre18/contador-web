@@ -32,3 +32,12 @@ boton.addEventListener("click", () => {
 
   cuerpoTabla.prepend(fila);
 });
+
+// 5. Reto 1: botón reiniciar
+const botonReiniciar = document.getElementById("btn-reiniciar");
+
+botonReiniciar.addEventListener("click", () => {
+  likes = 0;
+  textoContador.textContent = likes;
+  cuerpoTabla.innerHTML = "";
+});
