@@ -133,3 +133,9 @@ body.superado .tarjeta {
 body.superado .contador {
   color: #d97706;
 }
+
+/* Borde visible al navegar con el teclado */
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
