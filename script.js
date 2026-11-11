@@ -55,3 +55,11 @@ function actualizarColor() {
   while (cuerpoTabla.rows.length > 20) {
     cuerpoTabla.deleteRow(-1);
   }
+
+  // Atajo: la barra espaciadora también suma un like
+document.addEventListener("keydown", (evento) => {
+  if (evento.code === "Space" && !evento.repeat) {
+    evento.preventDefault();
+    boton.click();
+  }
+});
