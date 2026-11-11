@@ -19,3 +19,10 @@ registra la hora exacta de cada clic en una tabla y permite reiniciar. Al supera
 
 ## Cómo ejecutarla
 Abrir `index.html` en el navegador.
+
+## Funcionalidades
+- Suma un like con el botón o con la barra espaciadora.
+- Registra el número de clic y la hora exacta (HH:MM:SS).
+- Muestra solo los últimos 20 registros.
+- Reinicia el contador y vacía la tabla.
+- Cambia el fondo a amarillo al superar 10 likes.
